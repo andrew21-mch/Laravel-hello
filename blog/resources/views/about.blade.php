@@ -3,7 +3,7 @@
 <title>About | Laravel</title>
 <style>
 body{
-        background-color: blue
+        background-color: blue;
     }
     </style>
 </head>
