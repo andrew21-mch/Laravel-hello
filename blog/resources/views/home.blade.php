@@ -5,14 +5,14 @@
 
     <style>
     body{
-        background-color: blue;
+        background-color: smoke;
     }
     </style>
     </head>
     <body>
-        <h1>Home page</h1> <hr>
+        <center><h1>Home page</h1> <hr>
         <h4>
         Welcome Laravel
-        </h4>
+        </h4></center>
     </body>
 </html>
