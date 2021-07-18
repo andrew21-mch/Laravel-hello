@@ -17,4 +17,10 @@ use App\Http\Controllers\Users;
 Route::get('/', function () {
     return view('welcome');
 });
+//calling a controller
 Route::get('users/{name}', [Users::class,'greet']);
+
+//normal routing for views with parametes
+Route::get('/user/{name}',function($name){
+    return view('users', ['name'=>$name]);
+});
