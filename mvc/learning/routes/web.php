@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users;
+use App\Http\Controllers\userController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,9 +19,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 //calling a controller
-Route::get('users/{name}', [Users::class,'greet']);
+//Route::get('users/{name}', [Users::class,'greet']);
 
 //normal routing for views with parametes
-Route::get('/user/{name}',function($name){
-    return view('users', ['name'=>$name]);
-});
+//Route::get('/user/{name}',function($name){
+   // return view('users', ['name'=>$name]);
+//});
+
+//loading view from controller
+Route::get('/users/{name}', [userController::class, 'loadView']);
