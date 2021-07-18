@@ -1,1 +1,3 @@
-# Learning Laravel controllers
+# Learning Laravel 
+<li>controllers</li>
+<li>Views</li>
