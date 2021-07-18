@@ -17,5 +17,5 @@ Route::get('/', function(){
     return view('home');
 });
 Route::get('/contact', function(){
-    return view('contact');
+    return redirect('contact');
 });
