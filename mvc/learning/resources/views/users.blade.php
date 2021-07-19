@@ -1,2 +1,3 @@
 <!--simple views to test controllers-->
-<h2>hello {{$name}}</h2>
+<x-header data="users component header"/>
+<h1>user page</h1>  
