@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\userAuth;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,4 +19,7 @@ use App\Http\Controllers\userController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::resource('tasks','taskController');
+Route::view('profile', 'user');
+Route::view('login', 'login');
+Route::post("users",[userController::class, 'testRequest']);
+Route::post('login', [userAuth::class,'userLogin']);
