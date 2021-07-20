@@ -1,5 +1,5 @@
 # Learning Laravel 
-<img src="larave.jpeg" style="width: 950px; height:200px">
+<img src="larave.jpeg" style="width: 950px;">
 <li>controllers</li>
 <li>Views</li>
 <li>Views</li>
