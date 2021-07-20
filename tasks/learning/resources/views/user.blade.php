@@ -1,7 +1,2 @@
-<h2>User Login</h2>
-    <form action="users" method="POST">
-    @csrf
-        <input type="text" name="user" id="" placeholder="Username"><br><br>
-        <input type="password" name="password" placeholder="Password"><br><br>
-        <button type="submit">Submit</button>
-    </form>
+<nav style="background-color:blue; height:2rem"><h2><li>Hello <u>{{session('name');}}</u></li></h2></nav>
+<h1>User profile</h1>
