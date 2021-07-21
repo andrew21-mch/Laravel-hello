@@ -1,2 +1,11 @@
-<nav style="background-color:blue; height:2rem"><h2><li>Hello <u>{{session('name');}}</u></li></h2></nav>
-<h1>User profile</h1>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <h2>Hello man </h2>
+    <h4>welcome to your dashboard</h4>
+  </body>
+</html>

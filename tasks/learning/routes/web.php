@@ -19,8 +19,7 @@ use App\Http\Controllers\userAuth;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::view('user', 'user');
-Route::view('login', 'login');
-//Route::post("users",[userController::class, 'testRequest']);
-Route::post('login', [userAuth::class,'userLogin']);
-Route::post('login',[userAuth::class, 'Login']);
+Route::view('/login', 'login');
+Route::view('/dashboard','user');
+
+Route::post('login',[userAuth::class, 'userLogin']);
