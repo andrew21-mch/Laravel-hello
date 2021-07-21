@@ -19,7 +19,24 @@ use App\Http\Controllers\userAuth;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::view('/login', 'login');
+Route::get('/logout', function () {
+    if(session()->has('username')){
+        session()->pull('username');
+    }
+    return redirect('login');
+});
+
+Route::get('/login', function () {
+    if(session()->has('username')){
+        return redirect('user');
+    }
+    else{
+        return view('login');
+    }
+});
+
+
+//Route::view('/login', 'login');
 Route::view('/dashboard','user');
 
 Route::post('login',[userAuth::class, 'userLogin']);
