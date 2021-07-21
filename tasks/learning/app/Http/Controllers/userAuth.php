@@ -6,19 +6,14 @@ use Illuminate\Http\Request;
 
 class userAuth extends Controller
 {
-    /*public function userLogin(Request $request)
-    {
+    public function userLogin(Request $request){
+        $request->validate([
+            'username' =>'required | max:10',
+            'password' =>'required | min:5',
+        ]);
         $data = $request->input();
-        $request->session()->put('name',$data['name']);
-        echo session('name');
-    }*/
-    public function Login(Request $login)
-    {
-        $datas = $login->input();
-        if(($datas['name']=='andrew') && ($datas['pass']=='tata111'))
-        {
-            $login->session()->put('name',$datas['name']);
-            return redirect('user');
+        if($data['username']=='drew98' && $data['password']=='password'){
+            return redirect('dashboard');
         }
         else{
             return redirect('login');
