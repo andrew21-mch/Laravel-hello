@@ -10,12 +10,12 @@
       @csrf
       <h2>User Login</h2>
       <input type="text" name="username" value="" placeholder="Username"><br>
-      <span>@error('username')
+      <span style="color: red">@error('username')
         {{$message}}  
       @enderror</span>
       <br>
       <input type="password" name="password" value="" placeholder="Passwrod"><br>
-      <span>@error('password')
+      <span style="color: red">@error('password')
         {{$message}}  
       @enderror</span>
       <br>

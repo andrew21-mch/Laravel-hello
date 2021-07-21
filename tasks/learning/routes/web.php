@@ -23,3 +23,4 @@ Route::view('/login', 'login');
 Route::view('/dashboard','user');
 
 Route::post('login',[userAuth::class, 'userLogin']);
+//Route::get('user', [userController::class,'fetchData']);
