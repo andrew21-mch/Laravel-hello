@@ -8,7 +8,7 @@
   <center>
       <form action="login" method="post">
       @csrf
-      <h2>User Login</h2>
+      <h2> User Login </h2>
       <input type="text" name="username" value="" placeholder="Username"><br>
       <span style="color: red">@error('username')
         {{$message}}  
@@ -20,7 +20,8 @@
       @enderror</span>
       <br>
       <button type="submit" name="button">Login</button>
-    </form> </center>
+    </form> 
+  </center>
 
    </body>
 </html>
