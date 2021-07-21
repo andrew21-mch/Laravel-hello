@@ -3,9 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>Dashboard</title>
+    <style>
+      a{
+        float: right;
+      }
+      nav{
+        background-color:darkcyan;
+        padding:2rem;
+      }
+      center{
+        background-image: ur
+      }
+    </style>
   </head>
   <body>
-    <h2> Hello {{session('username')}} </h2>
-    <h4>welcome to your dashboard</h4>
+    <nav> <b>Hello {{session('username')}}</b> <a href="login">Logout</a></span></nav>
+    <div><center><h1>welcome to your dashboard</h1></center></div>
+    
   </body>
 </html>
