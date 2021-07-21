@@ -17,7 +17,7 @@
     </style>
   </head>
   <body>
-    <nav> <b>Hello {{session('username')}}</b> <a href="login">Logout</a></span></nav>
+    <nav> <b>Hello {{session('username')}}</b> <a href="/logout">Logout</a></span></nav>
     <div><center><h1>welcome to your dashboard</h1></center></div>
     
   </body>
