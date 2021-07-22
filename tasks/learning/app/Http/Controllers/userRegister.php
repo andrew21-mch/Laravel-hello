@@ -22,6 +22,7 @@ class userRegister extends Controller
        $user->password=$request->password;
        $user->user_email=$request->email;
        $user->save();
+
        
        return redirect('register');
 
