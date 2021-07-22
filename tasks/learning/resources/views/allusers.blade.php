@@ -39,7 +39,6 @@
     @endforeach
 </tr>
 </table>
-
 <span>
     {{$users->links()}}
 </span>
